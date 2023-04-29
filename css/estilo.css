@@ -233,7 +233,11 @@ html {
     font-size: 16px;
     position: relative;
     z-index: 10;
-    border-radius: 12px;
+}
+
+.sobremi .boton{
+    text-decoration: none;
+    color: #000000;
 }
 
 .sobremi button .overlay {
@@ -245,7 +249,6 @@ html {
     background-color: #E9C46A;
     z-index: -1;
     transition: 1s;
-    border-radius: 12px;
 }
 
 .sobremi button:hover .overlay {
@@ -326,7 +329,7 @@ html {
 
 .skills .skill .html {
     width: 0%;
-    animation: 2s html forwards;
+    animation: 5s html forwards;
 }
 
 @keyframes html {
@@ -336,17 +339,17 @@ html {
 
 .skills .skill .css {
     width: 0%;
-    animation: 2s css forwards;
+    animation: 5s css forwards;
 }
 
 @keyframes css {
     0%{width: 0%;}
-    100%{width: 25%;}
+    100%{width: 55%;}
 }
 
 .skills .skill .javascript {
     width: 0%;
-    animation: 2s javascript forwards;
+    animation: 5s javascript forwards;
 }
 
 @keyframes javascript {
@@ -357,7 +360,7 @@ html {
 
 .skills .skill .sql {
     width: 0%;
-    animation: 2s sql forwards;
+    animation: 5s sql forwards;
 }
 
 @keyframes sql {
@@ -367,7 +370,7 @@ html {
 
 .skills .skill .react {
     width: 0%;
-    animation: 2s react forwards;
+    animation: 5s react forwards;
 }
 
 @keyframes react {
@@ -377,7 +380,7 @@ html {
 
 .skills .skill .node {
     width: 0%;
-    animation: 2s node forwards;
+    animation: 5s node forwards;
 }
 
 @keyframes node {
@@ -387,17 +390,17 @@ html {
 
 .skills .skill .pyt {
     width: 0%;
-    animation: 2s pyt forwards;
+    animation: 5s pyt forwards;
 }
 
 @keyframes pyt {
     0%{width: 0%;}
-    100%{width: 20%;}
+    100%{width: 50%;}
 }
 
 .skills .skill .comu {
     width: 0%;
-    animation: 2s comu forwards;
+    animation: 5s comu forwards;
 }
 
 @keyframes comu {
@@ -407,7 +410,7 @@ html {
 
 .skills .skill .teq {
     width: 0%;
-    animation: 2s teq forwards;
+    animation: 5s teq forwards;
 }
 
 @keyframes teq {
@@ -416,7 +419,7 @@ html {
 }
 .skills .skill .crea {
     width: 0%;
-    animation: 2s crea forwards;
+    animation: 5s crea forwards;
 }
 
 @keyframes crea {
@@ -426,7 +429,7 @@ html {
 
 .skills .skill .apren {
     width: 0%;
-    animation: 2s apren forwards;
+    animation: 5s apren forwards;
 }
 
 @keyframes apren {
@@ -436,7 +439,7 @@ html {
 
 .skills .skill .met {
     width: 0%;
-    animation: 2s met forwards;
+    animation: 5s met forwards;
 }
 
 @keyframes met {
@@ -446,7 +449,7 @@ html {
 
 .skills .skill .resil {
     width: 0%;
-    animation: 2s resil forwards;
+    animation: 5s resil forwards;
 }
 
 @keyframes resil {
@@ -456,7 +459,7 @@ html {
 
 .skills .skill .lider {
     width: 0%;
-    animation: 2s lider forwards;
+    animation: 5s lider forwards;
 }
 
 @keyframes lider {
@@ -769,3 +772,124 @@ html {
     margin-right: 20px;
 }
 
+footer{
+    background-color:#022b3a ;
+    color: #d9e5d6;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes a{
+    color:#000000;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #264653;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: 0.3s;
+    background-color: #d9e5d6;
+}
+
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #E9C46A;
+    column-rule: #d9e5d6;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:980px) {
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75%;
+        background-color: #022b3a;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #d9e5d6;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .sobremi .fila {
+        display: block;
+    }
+
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+
+    .skills .fila{
+        display: block;
+    }
+
+    .skills .fila .col{
+        width: 100%;
+    }
+
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+
+    .curriculum .fila{
+        display: block;
+    }
+
+    .curriculum .fila .col{
+        width: 90%;
+    }
+
+    .curriculum .fila .derecha{
+        margin-left: 20px;
+    }
+
+    .portfolio .galeria{
+        display: block;
+        width: 100%;
+    }
+
+    .portfolio .galeria .proyecto{
+        max-width: 100%;
+    }
+
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
+
+    .contacto .fila{
+        display: block;
+    }
+
+    .contacto .fila .col{
+        width: 100%;
+    }
+
+}
